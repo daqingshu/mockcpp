@@ -33,7 +33,7 @@ struct Error : public std::exception
    {}
    ~Error() TESTNGPP_THROW() {}
 
-   const char* what() const TESTNGPP_THROW()
+   const char* what() const throw()
    {
       return reason.c_str();
    }
