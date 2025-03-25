@@ -40,7 +40,7 @@ unsigned int Exception::getLineOfFile() const
 }
 
 //////////////////////////////////////////////////////////
-const char* Exception::what() const TESTNGPP_THROW()
+const char* Exception::what() const throw()
 {
    return errMsg.c_str();
 }
