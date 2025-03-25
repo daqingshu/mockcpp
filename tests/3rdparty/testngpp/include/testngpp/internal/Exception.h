@@ -34,7 +34,7 @@ public:
 
    const std::string& getFileName() const;
    unsigned int getLineOfFile() const;
-   const char* what() const TESTNGPP_THROW();
+   const char* what() const throw();
 
 private:
    std::string fileName;
